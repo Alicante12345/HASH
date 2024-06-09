@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/final%20project/no.5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Condo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 600px;;
+            border-right: 2px solid #ddd;
+        }
+
+        .content-section {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .content-section h1 {
+            font-family: 'Cursive', sans-serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .content-section ul li {
+            margin-bottom: 10px;
+        }
+        button.back-to-top-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(20, 20, 20);
+            border: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+            cursor: pointer;
+            transition-duration: 0.3s;
+            overflow: hidden;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+        button.back-to-top-button svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+            transition-duration: 0.3s;
+        }
+
+        button.back-to-top-button:hover svg {
+            transform: translateY(-4px);
+        }
+
+        button.back-to-top-button a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="./About This Condo_files/5.jpg" alt="Condo Image"> 
+        </div>
+        <div class="content-section">
+            <h1>About this Condo</h1>
+            <ul>
+                <li>Nature-Inspired: Mimicking the Rice Terraces.</li>
+                <li>Eco-Integration: Sustainable building features for a greener footprint.</li>
+                <li>Seamless Blend: Structures harmonizing with natural landscapes.</li>
+                <li>Bright &amp; Fresh: Optimized light and ventilation.</li>
+                <li>Green Terraces: Cascading outdoor spaces.</li>
+                <li>Balanced Design: Merging nature with modern living.</li>
+            </ul>
+        </div>
+    </div>
+    <button class="back-to-top-button">
+        <a href="http://127.0.0.1:5500/final%20project/final%20project.html"><!-- Replace #header with the ID of the element you want to scroll to, for example, #header -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+        </a>
+    </button>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
